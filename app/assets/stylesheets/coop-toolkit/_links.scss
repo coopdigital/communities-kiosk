@@ -1,0 +1,19 @@
+/*===============================================
+Links - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+@import "colours";
+@import "mixins/links";
+
+a {
+  @include link;
+}
+
+.link-white {
+  @include link($white);
+}
+
+.link-black {
+  @include link($body-copy);
+}

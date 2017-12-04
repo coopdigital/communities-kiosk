@@ -1,0 +1,50 @@
+/*===============================================
+Messages/alerts - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../colours";
+@import "../mixins/messages";
+@import "../mixins/icons";
+
+.message {
+  @extend %message;
+}
+
+.message-prompt {
+  &:before {
+    @extend %icon-help;
+  }
+}
+
+.message-info {
+  border-color: $info-orange;
+  color: $body-copy;
+  background: lighten($info-orange, 55%);
+
+  &:before {
+    @extend %icon-information;
+    color: $info-orange;
+  }
+}
+
+.message-error {
+  border-color: $saleerror-red;
+  color: $body-copy;
+  background: lighten($saleerror-red, 55%);
+
+  &:before {
+    @extend %icon-alert;
+    color: $saleerror-red;
+  }
+}
+
+.message-success {
+  border-color: $success-green;
+  color: $body-copy;
+  background: lighten($success-green, 65%);
+
+  &:before {
+    @extend %icon-tick;
+    color: $success-green;
+  }
+}

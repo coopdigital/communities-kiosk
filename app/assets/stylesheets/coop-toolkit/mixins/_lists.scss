@@ -1,0 +1,20 @@
+/*===============================================
+Lists mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@mixin list {
+  margin-bottom: $half-spacing-unit;
+}
+
+@mixin list-bare {
+  list-style-type: none;
+  padding: 0;
+}
+
+@mixin list-inline {
+  @include list-bare;
+
+  li {
+    display: inline-block;
+  }
+}

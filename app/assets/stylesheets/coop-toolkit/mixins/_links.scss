@@ -1,0 +1,20 @@
+/*===============================================
+Links mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@mixin link($color: $coop-link-blue) {
+  color: $color;
+  border-bottom: .075em solid $color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($color, 15%);
+    border-color: darken($color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    transition: none;
+    outline: 4px solid $coop-blue-highlighted;
+  }
+}

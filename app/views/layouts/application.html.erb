@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Co-op Communities - Pact</title>
+    <meta name="description" content="">
+    <%= csrf_meta_tags %>
+    <%#<%= favicon_tag 'images/favicon.ico' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="app-content">
+      <div class="content-wrapper">
+
+        <header class="wrap header-main header-design-manual">
+          <a class="coop-logo" aria-label="Homepage" href="index.html">
+            <img src="<%= image_path 'logos/coop-logo.svg' %>" alt="Co-op">
+          </a>
+        </header>
+
+        <main id="main" class="main">
+          <article class="wrap">
+              <div class="row margin-bh">
+                <div class="column large-7">
+                  <%= yield %>
+                </div>
+              </div>
+          </article>
+        </main>
+
+      </div>
+    </div>
+  </body>
+</html>
