@@ -16,12 +16,12 @@ Fonts - Co-op Front-end Toolkit
 
 @font-face{
   font-family:"AvenirNextLTW01-Medium";
-  src: asset-url("fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
-  src: asset-url("fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),
-    asset-url("fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),
-    asset-url("fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),
-    asset-url("fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),
-    asset-url("fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+  src: font-url("1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+  src: font-url("1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),
+    font-url("627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),
+    font-url("f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),
+    font-url("63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),
+    font-url("a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
 }
 
 @font-face {
