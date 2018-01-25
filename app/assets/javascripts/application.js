@@ -13,3 +13,34 @@
 //= require jquery
 //= require rails-ujs
 //= require_tree .
+
+$(document).ready(function(){
+  $('#thanks').hide();
+  $('#card-number').focus();
+
+  $('#card-form').submit(function(event){
+    event.preventDefault();
+    var numbers = JSON.parse(window.localStorage.getItem('card-numbers') || '[]');
+    numbers.push({number: $('#card-number').val(), time: new Date()})
+    console.log(numbers);
+    window.localStorage.setItem('card-numbers', JSON.stringify(numbers));
+
+    $('#card-number').val('');
+    $('#thanks').show();
+    $('#ad').hide();
+    setTimeout(function(){
+      $('#ad').show();
+      $('#thanks').hide();
+      $('#card-number').focus();
+    }, 5000);
+  });
+
+  if($('table#numbers').length > 0){
+    var numbers = JSON.parse(window.localStorage.getItem('card-numbers') || '[]');
+    $.each(numbers, function(index, object){
+      $('table#numbers').append('<tr><td>'+object.number+'</td><td>'+object.time+'</td></tr>')
+    });
+  }
+
+});
+
