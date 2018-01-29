@@ -15,23 +15,36 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $('#thanks').hide();
-  $('#card-number').focus();
+  $('.response').hide();
+  $('#card_number').focus();
+
+  function resetScreen(){
+    setTimeout(function(){
+      $('#card_number').val('');
+      $('#ad').show();
+      $('.response').hide();
+      $('#card_number').focus();
+    }, 5000);
+  }
 
   $('#card-form').submit(function(event){
     event.preventDefault();
-    var numbers = JSON.parse(window.localStorage.getItem('card-numbers') || '[]');
-    numbers.push({number: $('#card-number').val(), time: new Date()})
-    window.localStorage.setItem('card-numbers', JSON.stringify(numbers));
 
-    $('#card-number').val('');
-    $('#thanks').show();
-    $('#ad').hide();
-    setTimeout(function(){
-      $('#ad').show();
-      $('#thanks').hide();
-      $('#card-number').focus();
-    }, 5000);
+    $.ajax({
+      url: $(this).attr('action'),
+      method: 'POST',
+      data: $(this).serialize(),
+      success: function(data, textStatus, jqXHR){
+        $('#ad').hide();
+        $('#thanks').show();
+        resetScreen();
+      },
+      error: function(jqXHR, textStatus, errorThrown){
+        $('#ad').hide();
+        $('#error').show();
+        resetScreen();
+      }
+    })
   });
 
   if($('table#numbers').length > 0){

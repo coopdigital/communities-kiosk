@@ -10,6 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20180129114232) do
+
+  create_table "communications", force: :cascade do |t|
+    t.integer "scan_id", null: false
+    t.string "communication_type", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scans", force: :cascade do |t|
+    t.string "uuid", null: false
+    t.string "card_number", null: false
+    t.string "screen_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
