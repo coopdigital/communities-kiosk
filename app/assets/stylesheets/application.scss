@@ -14,3 +14,8 @@
  */
 
 @import 'coop-toolkit/coop-toolkit';
+
+.offscreen {
+  position: absolute;
+  left: -999em;
+}
