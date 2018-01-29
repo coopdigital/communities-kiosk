@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>anonymous.svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14.5" cy="14.5" r="14.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mock" transform="translate(-215.000000, -1740.000000)">
+            <g id="card-3" transform="translate(145.000000, 1221.000000)">
+                <g id="intro-me" transform="translate(35.000000, 519.000000)">
+                    <g id="anonymous.svg" transform="translate(35.000000, 0.000000)">
+                        <g id="Oval">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                            <circle fill="#9B9B9B" mask="url(#mask-2)" cx="14.5" cy="29.5" r="12.5"></circle>
+                        </g>
+                        <circle id="Oval" fill="#9B9B9B" cx="14.5" cy="8.5" r="6.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
