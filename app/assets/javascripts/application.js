@@ -22,7 +22,6 @@ $(document).ready(function(){
     event.preventDefault();
     var numbers = JSON.parse(window.localStorage.getItem('card-numbers') || '[]');
     numbers.push({number: $('#card-number').val(), time: new Date()})
-    console.log(numbers);
     window.localStorage.setItem('card-numbers', JSON.stringify(numbers));
 
     $('#card-number').val('');
