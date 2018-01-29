@@ -19,3 +19,70 @@
   position: absolute;
   left: -999em;
 }
+
+
+body.scan {
+  font-size: 1.8vw;
+  padding: 2rem;
+  .large-7 {
+    width: 100%;
+  }
+  header.header-main {
+    display: none;
+  }
+
+  section.activity {
+    display: flex;
+    justify-content: space-between;
+    article {
+      width: 56vw;
+      p {
+      }
+    }
+    aside {
+      width: 30vw;
+      img {
+        &.organiser-avatar {
+          width: 50%;
+          border-radius: 100%;
+        }
+      }
+      h2 {
+        font-size: 24px;
+      }
+      iframe {
+        margin: 4vh 0;
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    margin-top: 1rem;
+    height: 8rem;
+    img {
+      float: left;
+      margin: -1rem 2rem 0 1rem;
+      height: 10rem;
+    }
+    p {
+      padding: 1.2rem 0 0 0;
+      line-height: 1.4;
+      font-family: 'AvenirNextLTW01-Demi';
+      max-width: 44rem;
+    }
+    background: rgba(0,177,231,0.1);
+    border-radius: 0.6rem;
+  }
+
+  main#main {
+    article.wrap {
+      div.margin-bh {
+        margin-bottom: 0;
+      }
+    }
+    > footer {
+      display: none;
+    }
+  }
+}
