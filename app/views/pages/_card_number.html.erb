@@ -1,0 +1,14 @@
+<%= form_tag scans_path, id: 'card-form' do %>
+  <%= text_field_tag :card_number, '', autocomplete: 'off', class: 'offscreen'%>
+  <%= hidden_field_tag  :screen_id, screen_id %>
+<% end %>
+
+<section id="thanks" class="response">
+  <h1>😄</h1>
+  <h2>Thanks! We'll be in touch shortly.</h2>
+</section>
+
+<section id="error" class="response">
+  <h1>🤭</h1>
+  <h2>Sorry! Something went wrong...</h2>
+</section>

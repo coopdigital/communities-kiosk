@@ -3,18 +3,6 @@
   <h2>Everyone brings a dish and you enjoy a meal together.</h2>
   <h2>Scan your card below and we'll text you with some details.</h2>
   <h1>👇</h1>
-  <%= form_tag scans_path, id: 'card-form' do %>
-    <%= text_field_tag :card_number, '', autocomplete: 'off' %>
-    <%= hidden_field_tag  :screen_id, 'demo'%>
-  <% end %>
+  <%= render 'pages/card_number', screen_id: 'demo' %>
 </section>
 
-<section id="thanks" class="response">
-  <h1>😄</h1>
-  <h2>Thanks! We'll be in touch shortly.</h2>
-</section>
-
-<section id="error" class="response">
-  <h1>🤭</h1>
-  <h2>Sorry! Something went wrong...</h2>
-</section>
