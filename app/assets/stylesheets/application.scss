@@ -88,4 +88,12 @@ body.scan {
       display: none;
     }
   }
+  section.response {
+    text-align: center;
+    span {
+      &.confirm {
+        font-size: 4rem;
+      }
+    }
+  }
 }
