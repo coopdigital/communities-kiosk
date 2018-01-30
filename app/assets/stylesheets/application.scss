@@ -47,12 +47,16 @@ body.scan {
           border-radius: 100%;
         }
       }
-      h2 {
-        font-size: 24px;
-      }
       iframe {
         margin: 4vh 0;
         width: 100%;
+      }
+      div {
+        &.group-members {
+          h2 {
+            font-size: 18px;
+          }
+        }
       }
     }
   }
