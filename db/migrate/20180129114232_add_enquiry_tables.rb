@@ -13,6 +13,6 @@ class AddEnquiryTables < ActiveRecord::Migration[5.1]
       t.timestamps
     end
 
-    add_foreign_key :communications, :scans, on_delete: :cascasde
+    add_foreign_key :communications, :scans, on_delete: :cascade
   end
 end
