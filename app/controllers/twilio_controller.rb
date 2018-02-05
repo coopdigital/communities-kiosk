@@ -10,7 +10,7 @@ class TwilioController < ApplicationController
     sms = @client.messages.create(
       from: Rails.application.secrets.twilio_number,
       to: from_number,
-      body: "Great. Aanya will be in touch! 😄"
+      body: "Great. Rachel will be in touch! 😄"
     )
   end
 end
